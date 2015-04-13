@@ -1,0 +1,13 @@
+<h1>Kites, these be:</h1>
+
+<%= link_to 'Add a Kite', new_kite_path %>
+
+<% @kites.each do |kite| %>
+	<p><%= kite.name %></p>
+	<p><%= kite.description %></p>
+	<p><%= kite.manufacturer %></p>
+	<p><%= kite.color %></p>
+	<p><%= kite.quantity %></p>
+	<p><%= kite.price %></p>
+	<%= link_to 'Show this Kite', kite_path(kite) %>
+<% end %>

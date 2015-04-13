@@ -1,0 +1,10 @@
+Name: <%= @kite.name %>
+Description: <%= @kite.description %>
+Manufacturer: <%= @kite.manufacturer %>
+Color: <%= @kite.color %>
+Quantity: <%= @kite.quantity %>
+Price: <%= @kite.price %>
+
+<%= link_to 'Edit Kite', edit_kite_path %>
+
+<%= link_to 'Delete', @kite, method: :delete, data: { confirm: "Are you sure?"} %>

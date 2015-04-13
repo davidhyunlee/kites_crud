@@ -1,0 +1,14 @@
+<h1>Add a new Kite!</h1>
+
+<%= form_for @kite do |f| %>
+	Name: <%= f.text_field :name %>
+	Description: <%= f.text_field :description %>
+	Manufacturer: <%= f.text_field :manufacturer %>
+	Color: <%= f.text_field :color %>
+	Quantity: <%= f.text_field :quantity %>
+	Price <%= f.text_field :price %>
+
+	<%= f.submit %>
+<% end %>
+
+<%= link_to "Back to Kites Listing", kites_path %>
